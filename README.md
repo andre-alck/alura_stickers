@@ -1,18 +1,13 @@
-## Getting Started
+# Desafio 1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
 
-## Folder Structure
+## Notas
 
-The workspace contains two folders by default, where:
+Considerando que a API do IMDB está fora do ar, serão utilizados recursos externos disponibilizados pelos instrutores da Imersão.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+"Consumir o endpoint de filmes mais populares da API do IMDB": https://api.mocki.io/v2/549a5d8b/MostPopularMovies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+"... endpoint que retorna as melhores séries...": https://api.mocki.io/v2/549a5d8b/Top250TVs
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+"... retorna as séries mais populares.": https://api.mocki.io/v2/549a5d8b/MostPopularTVs
