@@ -6,4 +6,4 @@ Mudar o JsonParser para usar uma biblioteca de parsing de JSON como Jackson ou G
 
 Impossível completar este desafio.
 
-Para importar a biblioteca Jackson, o projeto deve ser criado utilizando Maven ou Gradle. Neste caso, como foi instruído a criação de um projeto "No build tools", não é poissível completar desta maneira.
+Para importar a biblioteca Jackson, o projeto deve ser criado utilizando Maven ou Gradle. Neste caso, como foi instruído a criação de um projeto "No build tools", não é possível completar desta maneira.
