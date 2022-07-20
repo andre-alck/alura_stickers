@@ -1,18 +1,14 @@
-## Getting Started
+# Desafio 5
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 
-## Folder Structure
+## Notas
 
-The workspace contains two folders by default, where:
+https://www.w3schools.com/java/showjava.asp?filename=demo_api_scanner
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+https://stackoverflow.com/questions/4157972/how-to-update-a-value-given-a-key-in-a-hashmap
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```java
+for (Map<String, String> filme : listaDeFilmes)
+    filme.put("imDbRating", new Scanner(System.in).nextLine());
+```
