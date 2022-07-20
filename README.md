@@ -1,18 +1,9 @@
-## Getting Started
+# imersão java_
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<img src="https://www.alura.com.br/assets/img/imersao-java/imersao-logo.1655844054.svg" alt="logo" width="500"/>
 
-## Folder Structure
+5 aulas de programação, gratuitas, para você desenvolver do zero sua primeira aplicação em Java, progredir na carreira e ampliar ou começar o seu portfólio.
 
-The workspace contains two folders by default, where:
+## AULA 01 - CONSUMINDO UMA API DE FILMES COM JAVA
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Nesta primeira aula, vamos construir uma aplicação do zero para consumir a API do IMDb e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação... Tudo isso sem usar nenhuma biblioteca externa!
