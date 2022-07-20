@@ -1,18 +1,26 @@
-## Getting Started
+# Desafio 2
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!
 
-## Folder Structure
+## Notas
 
-The workspace contains two folders by default, where:
+https://www.alura.com.br/artigos/decorando-terminal-cores-emojis
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```java
+// código exemplo
+System.out.println("🎬\t\u001b[1mFilme:\t\u001b[m" + filme.get("title"));
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+System.out.println(" = Java.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+🎬 = emoji, possui suporte em terminais modernos.
 
-## Dependency Management
+\t = tabulação.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+\u001b[1m = negrito.
+
+Filme: = string.
+
+\u001b[m = redefinir estilo.
+
+" + filme.get("title")); = Java.
