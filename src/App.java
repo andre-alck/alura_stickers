@@ -1,3 +1,5 @@
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -5,10 +7,20 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class App {
+    public static Properties getProp() throws IOException {
+        Properties props = new Properties();
+        FileInputStream file = new FileInputStream("src\\properties\\url.properties");
+        props.load(file);
+        return props;
+    }
+
     public static void main(String[] args) throws Exception {
-        String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+        Properties prop = getProp();
+        String url = prop.getProperty("url");
+
         URI endereco = URI.create(url);
 
         var client = HttpClient.newHttpClient();

@@ -1,18 +1,9 @@
-## Getting Started
+# Desafio 3
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Colocar a chave da API do IMDB em algum lugar fora do código como um arquivo de configuração (p. ex, um arquivo .properties) ou uma variável de ambiente
 
-## Folder Structure
+## Notas
 
-The workspace contains two folders by default, where:
+https://www.devmedia.com.br/utilizando-arquivos-de-propriedades-no-java/25546
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Em suma, cria-se um diretório "properties" com seu respectivo arquivo "url.properties". Este, por sua vez, recebe somente o link contendo a API. Em sequência, deve-se criar um método que leia as propriedades do arquivo e, finalizando, armazene este resultado em uma variável.
