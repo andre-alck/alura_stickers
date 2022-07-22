@@ -24,3 +24,9 @@ Aplicação para consumir diferentes API's e exibir os filmes mais populares, de
 > Cada desafio possui sua respectiva branch.
 
 > Nota-se que o [Desafio 4 da Aula 1](https://github.com/andre-alck/alura-stickers/tree/aula01_desafio4#:~:text=Imposs%C3%ADvel%20completar%20este,completar%20desta%20maneira.) deve ser reestruturado pela Alura.
+
+## AULA 02 - GERANDO FIGURINHAS PARA WHATSAPP
+
+Criação de uma classe GeradoraDeFigurinhas. Esta possui um método "cria", que recebe um InputStream e uma String com o nome da imagem final. Em suma, ao chamar o método, serão aplicadas alterações e manipulações na imagem de entrada e gravadas em uma nova imagem.
+
+- **Código da aula**
