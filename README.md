@@ -28,5 +28,3 @@ Aplicação para consumir diferentes API's e exibir os filmes mais populares, de
 ## AULA 02 - GERANDO FIGURINHAS PARA WHATSAPP
 
 Criação de uma classe GeradoraDeFigurinhas. Esta possui um método "cria", que recebe um InputStream e uma String com o nome da imagem final. Em suma, ao chamar o método, serão aplicadas alterações e manipulações na imagem de entrada e gravadas em uma nova imagem.
-
-- **Código da aula**
