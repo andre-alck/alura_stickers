@@ -1,3 +1,3 @@
-# Desafio 4
+# Desafio 5
 
-Criar diretório de saída das imagens, se ainda não existir.
+Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
