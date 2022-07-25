@@ -26,7 +26,7 @@ public class App {
         var geradora = new GeradoraDeFigurinhas();
         for (Map<String, String> filme : listaDeFilmes) {
             String enderecoImagem = filme.get("image");
-            String nomeDoArquivo = filme.get("title") + ".png";
+            String nomeDoArquivo = filme.get("title").replace(":", "-") + ".png";
 
             InputStream inputStream = new URL(enderecoImagem).openStream();
 
