@@ -1,3 +1,3 @@
-# Desafio 6
+# Desafio 7
 
-Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!
+Colocar contorno (outline) no texto da imagem.
