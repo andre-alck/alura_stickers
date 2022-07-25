@@ -1,3 +1,3 @@
-# Desafio 5
+# Desafio 6
 
-Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
+Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!

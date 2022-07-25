@@ -19,8 +19,10 @@ public class GeradoraDeFigurinhas {
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(imagemOriginal, 0, 0, null);
         graphics.setColor(Color.YELLOW);
-        graphics.setFont(new Font("Comic Sans MS", Font.BOLD, 128));
-        graphics.drawString("TOPZERA", 0, novaAltura - 100);
+        graphics.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 64));
+        String textoDaFigurinha = "andre-alck";
+        int centroHorizontal = (largura / 2) - (graphics.getFontMetrics().stringWidth(textoDaFigurinha) / 2);
+        graphics.drawString(textoDaFigurinha, centroHorizontal, novaAltura - 100);
 
         new File("saida/").mkdir();
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
