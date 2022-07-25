@@ -30,7 +30,9 @@ public class App {
 
             InputStream inputStream = new URL(enderecoImagem).openStream();
 
-            geradora.cria(inputStream, nomeDoArquivo);
+            double classificacao = Double.parseDouble(filme.get("imDbRating"));
+
+            geradora.cria(inputStream, nomeDoArquivo, classificacao);
         }
     }
 }

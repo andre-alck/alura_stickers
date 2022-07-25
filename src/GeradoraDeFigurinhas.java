@@ -8,7 +8,7 @@ import java.io.InputStream;
 import javax.imageio.ImageIO;
 
 public class GeradoraDeFigurinhas {
-    public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
+    public void cria(InputStream inputStream, String nomeArquivo, Double classificacao) throws Exception {
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
 
         int largura = imagemOriginal.getWidth();
@@ -20,8 +20,28 @@ public class GeradoraDeFigurinhas {
         graphics.drawImage(imagemOriginal, 0, 0, null);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 128));
-        graphics.drawString("TOPZERA", 0, novaAltura - 100);
-        
+
+        String textoDaFigurinha = "";
+
+        if (classificacao >= 0 && classificacao <= 3) {
+            textoDaFigurinha = "💀 PÉSSIMO! 💀";
+        } else if (classificacao >= 4 && classificacao <= 5) {
+            textoDaFigurinha = "RUIM! 🍅";
+        } else if (classificacao >= 6 && classificacao <= 7) {
+            textoDaFigurinha = "MEDIANO 😶";
+        } else if (classificacao >= 8 && classificacao < 9) {
+            textoDaFigurinha = "BOM! 😁";
+        } else if (classificacao >= 9 && classificacao < 10) {
+            textoDaFigurinha = "ÓTIMO! 😱";
+        } else if (classificacao == 10) {
+            textoDaFigurinha = "🌟 BEST SELLER! 🌟";
+        } else {
+            textoDaFigurinha = "Classificação inválida.";
+        }
+
+        int centroHorizontal = (largura / 2) - (graphics.getFontMetrics().stringWidth(textoDaFigurinha) / 2);
+        graphics.drawString(textoDaFigurinha, centroHorizontal, novaAltura - 100);
+
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
     }
 }
