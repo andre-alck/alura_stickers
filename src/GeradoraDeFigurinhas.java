@@ -22,6 +22,7 @@ public class GeradoraDeFigurinhas {
         graphics.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 128));
         graphics.drawString("TOPZERA", 0, novaAltura - 100);
 
+        new File("saida/").mkdir();
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
     }
 }
